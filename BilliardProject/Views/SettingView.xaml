@@ -21,16 +21,16 @@
         </Grid.RowDefinitions>
         <GroupBox Grid.Row="0">
             <GroupBox.Header>
-                <TextBlock Text="关机设置" FontSize="20" FontWeight="SemiBold" Foreground="Black">
+                <TextBlock Text="General" FontSize="20" FontWeight="SemiBold" Foreground="Black">
                     <TextBlock.Effect>
                         <DropShadowEffect Color="PaleVioletRed" ShadowDepth="1" BlurRadius="10" Opacity="0.6"/>
                     </TextBlock.Effect>
                 </TextBlock>
             </GroupBox.Header>
             <DockPanel LastChildFill="False" Margin="30 0 0 0">
-                <TextBlock VerticalAlignment="Center" Text="自动关机时间："  DockPanel.Dock="Left"/>
+                <TextBlock VerticalAlignment="Center" Text="Automatic Shutdown Time："  DockPanel.Dock="Left"/>
                 <TextBox Text="{Binding ShutdownTime}" Width="20" Height="16" DockPanel.Dock="Left"/>
-                <TextBlock Text="小时" DockPanel.Dock="Left"/>
+                <TextBlock Text="H" DockPanel.Dock="Left"/>
                 <CheckBox IsChecked="{Binding IsShutdownChecked}"  Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="ShutdownTimeChangedCommand" Width="16" Height="16" DockPanel.Dock="Right" Margin="0 0 40 0"/>
                 <TextBlock Text="{Binding LeftParenthesis}" Visibility="{Binding LeftParenthesisVisibility}" DockPanel.Dock="Left"/>
                 <TextBlock DockPanel.Dock="Left"  Text="{Binding CountDown}" Visibility="{Binding CountDownVisibility}">

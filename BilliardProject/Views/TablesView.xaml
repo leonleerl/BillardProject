@@ -32,7 +32,7 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="黑八专区" Grid.Row="0" Grid.ColumnSpan="4" Style="{StaticResource Title}"/>
+        <TextBlock Text="Pool 8" Grid.Row="0" Grid.ColumnSpan="4" Style="{StaticResource Title}"/>
         <UserControl Grid.Row="1" Grid.Column="0" Content="{Binding PoolEightViewOne}" Margin="5"/>
         <UserControl Grid.Row="1" Grid.Column="1" Content="{Binding PoolEightViewTwo}" Margin="5"/>
         <UserControl Grid.Row="1" Grid.Column="2" Content="{Binding PoolEightViewThree}" Margin="5"/>
@@ -42,7 +42,7 @@
         <UserControl Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Content="{Binding PoolEightViewSeven}" Margin="5"/>
         <UserControl Grid.Row="2" Grid.Column="3" Content="{Binding PaymentView}" Margin="15 25 15 45"/>
         <TextBlock Grid.Row="3" Grid.Column="3" Text="10:34" FontWeight="Bold" FontSize="20" Margin="15 25 15 45"/>
-        <TextBlock Text="斯诺克专区" Grid.Row="4" Grid.ColumnSpan="4" Style="{StaticResource Title}"/>
+        <TextBlock Text="Snooker" Grid.Row="4" Grid.ColumnSpan="4" Style="{StaticResource Title}"/>
         <UserControl Grid.Row="5" Grid.Column="0" Content="{Binding SnookerViewOne}" Margin="5"/>
         <UserControl Grid.Row="5" Grid.Column="1" Content="{Binding SnookerViewTwo}" Margin="5"/>
         <UserControl Grid.Row="5" Grid.Column="2" Content="{Binding SnookerViewThree}" Margin="5"/>

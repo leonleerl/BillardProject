@@ -23,7 +23,7 @@
             <Grid Grid.Row="0">
                 <!--顶部-->
                 <Border Visibility="{Binding IsActivated}" Grid.ColumnSpan="2" Height="25" VerticalAlignment="Top" Background="Red" Width="900" Opacity="0.7">
-                    <TextBlock Text="软件尚未激活" Foreground="White" FontSize="11" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Software is not activated" Foreground="White" FontSize="11" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                     <Button Margin="0 0 5 0" Content="帮助" Style="{StaticResource HelpButtonStyle}" Click="Button_Click"/>
@@ -63,36 +63,36 @@
                                 </Ellipse>
                             </Border>
                             <StackPanel VerticalAlignment="Top" Orientation="Vertical" Margin="10" Height="auto">
-                                <TextBlock FontSize="30" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" Text="Hero·台球俱乐部"/>
-                                <TextBlock FontSize="22" Opacity="0.7" HorizontalAlignment="Right" Margin="0 5 30 0" Foreground="White" Text="台球是一种享受"/>
+                                <TextBlock FontSize="30" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" Text="Hero·B Club"/>
+                                <TextBlock FontSize="22" Opacity="0.7" HorizontalAlignment="Right" Margin="0 5 30 0" Foreground="White" Text="Enjoy billiard"/>
                                 <Separator Width="200" Margin="0 20 0 20"/>
                                 <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="ShowMembership" Style="{StaticResource LeftSideButton}">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Foreground="Black" Text="&#xea76;" FontSize="23" FontFamily="/BilliardProject;component/Resource/Fonts/#iconfont"/>
-                                        <TextBlock Margin="20 0 0 0" Text="场内情况"/>
+                                        <TextBlock Margin="20 0 0 0" Text="Tables"/>
                                     </StackPanel>
                                 </Button>
                                 <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="ShowTables" Style="{StaticResource LeftSideButton}">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Foreground="OrangeRed" Text="&#xe600;" FontSize="23" FontFamily="/BilliardProject;component/Resource/Fonts/#iconfont"/>
-                                        <TextBlock Margin="20 0 0 0" Text="会员管理"/>
+                                        <TextBlock Margin="20 0 0 0" Text="VIP Mangement"/>
                                     </StackPanel>
                                 </Button>
                                 <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="ShowLog" Style="{StaticResource LeftSideButton}">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Foreground="Yellow" Text="&#xe715;" FontSize="23" FontFamily="/BilliardProject;component/Resource/Fonts/#iconfont"/>
-                                        <TextBlock Margin="20 0 0 0" Text="日志记录"/>
+                                        <TextBlock Margin="20 0 0 0" Text="Log"/>
                                     </StackPanel>
                                 </Button>
                                 <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="ThemeSetting" Style="{StaticResource LeftSideButton}">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Foreground="DeepSkyBlue" Text="&#xe601;" FontSize="23" FontFamily="/BilliardProject;component/Resource/Fonts/#iconfont"/>
-                                        <TextBlock Margin="20 0 0 0" Text="设置"/>
+                                        <TextBlock Margin="20 0 0 0" Text="Settings"/>
                                     </StackPanel>
                                 </Button>
                                 <GroupBox Margin="5 30 5 0">
                                     <GroupBox.Header>
-                                        <TextBlock Text="价目表" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="24"/>
+                                        <TextBlock Text="Price" FontWeight="Bold" Foreground="WhiteSmoke" FontSize="24"/>
                                     </GroupBox.Header>
                                     <Grid>
                                         <Grid.RowDefinitions>
@@ -105,14 +105,14 @@
                                             <ColumnDefinition Width="1*"/>
                                             <ColumnDefinition Width="1*"/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5 5 5 10" Text="黑八" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="斯诺克" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="0" Grid.Column="1" Margin="5" Text="非会员" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="0" Grid.Column="2" Margin="5" Text="会员" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="1" Grid.Column="1" Text="￥36/时" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="1" Grid.Column="2" Text="￥30/时" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="2" Grid.Column="1" Text="￥54/时" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="2" Grid.Column="2" Text="￥48/时" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5 5 5 10" Text="Pool" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="Snooker" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="1" Margin="5" Text="~VIP" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="2" Margin="5" Text="VIP" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="1" Text="￥36/h" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="2" Text="￥30/h" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="1" Text="￥54/h" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="2" Text="￥48/h" Style="{StaticResource Price}"/>
                                     </Grid>
                                 </GroupBox>
                             </StackPanel>

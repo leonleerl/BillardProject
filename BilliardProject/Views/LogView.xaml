@@ -27,14 +27,14 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <ComboBox Height="25" Width="130" ItemsSource="{Binding Category, Converter={StaticResource LogEnumConverter}}" SelectedItem="{Binding SelectedItem}"/>
             <TextBox Text="{Binding SearchContent}" VerticalContentAlignment="Center" Margin="20 0 0 0" Height="25" Width="120"/>
-            <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="SearchCommand" Style="{StaticResource LogButtonStyle}" Margin="20 0 0 0" Content="查找" Width="40"/>
-            <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="RefreshCommand" Style="{StaticResource LogButtonStyle}" Margin="15 0 0 0" Content="刷新" Width="40"/>
+            <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="SearchCommand" Style="{StaticResource LogButtonStyle}" Margin="20 0 0 0" Content="Search" Width="50"/>
+            <Button Command="{Binding Command_Fun, Mode=OneWay}" CommandParameter="RefreshCommand" Style="{StaticResource LogButtonStyle}" Margin="15 0 0 0" Content="Refresh" Width="50"/>
         </StackPanel>
         <DataGrid Grid.Row="1" ItemsSource="{Binding LogList}" RowHeight="30" Margin="10" IsReadOnly="True" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTemplateColumn Width="1*">
                     <DataGridTemplateColumn.Header>
-                        <TextBlock Text="电话号码" FontWeight="Bold" FontSize="18" Width="200"/>
+                        <TextBlock Text="Tel" FontWeight="Bold" FontSize="18" Width="200"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -44,7 +44,7 @@
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Width="1*">
                     <DataGridTemplateColumn.Header>
-                        <TextBlock Text="项目类型" FontWeight="Bold" FontSize="18" Width="200"/>
+                        <TextBlock Text="Type" FontWeight="Bold" FontSize="18" Width="200"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -54,7 +54,7 @@
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Width="1*">
                     <DataGridTemplateColumn.Header>
-                        <TextBlock Text="桌号" FontWeight="Bold" FontSize="18" Width="200"/>
+                        <TextBlock Text="No." FontWeight="Bold" FontSize="18" Width="200"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -64,7 +64,7 @@
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Width="1*">
                     <DataGridTemplateColumn.Header>
-                        <TextBlock Text="开始时间" FontWeight="Bold" FontSize="18" Width="200"/>
+                        <TextBlock Text="Start Time" FontWeight="Bold" FontSize="18" Width="200"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -74,7 +74,7 @@
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Width="1*">
                     <DataGridTemplateColumn.Header>
-                        <TextBlock Text="结束时间" FontWeight="Bold" FontSize="18" Width="200"/>
+                        <TextBlock Text="End Time" FontWeight="Bold" FontSize="18" Width="200"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -84,7 +84,7 @@
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Width="1*">
                     <DataGridTemplateColumn.Header>
-                        <TextBlock Text="收入" FontWeight="Bold" FontSize="18" Width="200"/>
+                        <TextBlock Text="Income" FontWeight="Bold" FontSize="18" Width="200"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -92,12 +92,6 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <!--<DataGridTextColumn Width="1*" Header="电话号码" Binding="{Binding Tel, Converter={StaticResource TelConverter}}"/>-->
-                <!--<DataGridTextColumn Width="1*" Header="项目类型" Binding="{Binding EntertainmentType}"/>-->
-                <!--<DataGridTextColumn Width="1*" Header="桌号" Binding="{Binding TableIndex}"/>-->
-                <!--<DataGridTextColumn Width="1*" Header="开始时间" Binding="{Binding StartTime}"/>-->
-                <!--<DataGridTextColumn Width="1*" Header="结束时间" Binding="{Binding EndTime}"/>-->
-                <!--<DataGridTextColumn Width="1*" Header="收入" Binding="{Binding Income, Converter={StaticResource CurrentPaymentConverter}}"/>-->
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

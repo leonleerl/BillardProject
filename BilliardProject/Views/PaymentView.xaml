@@ -24,7 +24,7 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="当前收费记录板" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="0" Text="Fee Board" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
             <Grid Grid.Row="1" Margin="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
@@ -35,11 +35,11 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="0" Grid.Column="0" Text="桌号："/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="0" Grid.Column="0" Text="No."/>
                 <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="0" Grid.Column="1" Text="{Binding TableIndex}"/>
-                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="1" Grid.Column="0" Text="非会员："/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="1" Grid.Column="0" Text="~VIP"/>
                 <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="1" Grid.Column="1" Text="{Binding Feihuiyuan, Converter={StaticResource CurrentPaymentConverter}}"/>
-                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="2" Grid.Column="0" Text="会员："/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="2" Grid.Column="0" Text="VIP"/>
                 <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="2" Grid.Column="1" Text="{Binding Huiyuan, Converter={StaticResource CurrentPaymentConverter}}"/>
             </Grid>
         </Grid>

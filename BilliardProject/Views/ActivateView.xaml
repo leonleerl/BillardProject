@@ -6,15 +6,19 @@
         xmlns:local="clr-namespace:BilliardProject.Views"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="激活" Height="240" Width="350">
+        Title="Activate" Height="240" Width="350">
     <Grid>
-        <Button Content="获取" HorizontalAlignment="Left" Margin="247,29,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="67,31,0,0" TextWrapping="Wrap" Text="序列号：" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="67,68,0,0" TextWrapping="Wrap" Text="激活码：" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSequence" HorizontalAlignment="Center" Margin="0,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtActivate" Height="60" HorizontalAlignment="Center" Margin="0,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock Text="遇到困难？联系我们：1249293378@qq.com" FontSize="11" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" Margin="0,137,0,0"/>
-        <Button Content="激活" HorizontalAlignment="Left" Margin="142,163,0,0" VerticalAlignment="Top" Height="20" Width="53" Click="Button_Click_1"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="159*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="get" HorizontalAlignment="Left" Margin="215,29,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,31,0,0" TextWrapping="Wrap" Text="Serial：" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,68,0,0" TextWrapping="Wrap" Text="Code：" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txtSequence" HorizontalAlignment="Left" Margin="83,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtActivate" Height="60" HorizontalAlignment="Left" Margin="83,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock Text="Contact us：leon.runlongli@gmail.com" FontSize="11" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" Margin="30,137,0,0" Grid.Column="1"/>
+        <Button Content="Activate" HorizontalAlignment="Left" Margin="110,163,0,0" VerticalAlignment="Top" Height="20" Width="53" Click="Button_Click_1" Grid.Column="1"/>
 
     </Grid>
 </Window>
