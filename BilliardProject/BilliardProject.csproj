@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resource\Images\desktopicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dll\**" />
+    <EmbeddedResource Remove="Dll\**" />
+    <None Remove="Dll\**" />
+    <Page Remove="Dll\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\Fonts\iconfont.ttf" />
+    <None Remove="Resource\Images\1.jpg" />
+    <None Remove="Resource\Images\desktopicon.jpg" />
+    <None Remove="Resource\Images\pooleight.jpg" />
+    <None Remove="Resource\Images\snooker.jpg" />
+    <None Remove="Resource\Images\台球2.jpg" />
+    <None Remove="Resource\Images\台球3.jpg" />
+    <None Remove="Resource\Images\背景1.jpg" />
+    <None Remove="Resource\Images\背景2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resource\Images\desktopicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Images\desktopicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Images\1.jpg" />
+    <Resource Include="Resource\Images\pooleight.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Fonts\iconfont.ttf" />
+    <Resource Include="Resource\Images\snooker.jpg" />
+    <Resource Include="Resource\Images\台球2.jpg" />
+    <Resource Include="Resource\Images\台球3.jpg" />
+    <Resource Include="Resource\Images\背景1.jpg" />
+    <Resource Include="Resource\Images\背景2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

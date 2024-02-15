@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="BilliardProject.Views.PaymentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BilliardProject.Views"
+             xmlns:vm="clr-namespace:BilliardProject.ViewModels"
+             xmlns:converter="clr-namespace:BilliardProject.Common.Converter"
+             d:DataContext="{d:DesignData Type=vm:PaymentViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="170"
+             Height="100" Width="170">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resource/Dictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converter:CurrentPaymentConverter x:Key="CurrentPaymentConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Background="LightPink" CornerRadius="30">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="当前收费记录板" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="0" Grid.Column="0" Text="桌号："/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="0" Grid.Column="1" Text="{Binding TableIndex}"/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="1" Grid.Column="0" Text="非会员："/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="1" Grid.Column="1" Text="{Binding Feihuiyuan, Converter={StaticResource CurrentPaymentConverter}}"/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="2" Grid.Column="0" Text="会员："/>
+                <TextBlock Style="{StaticResource CurrentPaymentTextBlockStyle}" Grid.Row="2" Grid.Column="1" Text="{Binding Huiyuan, Converter={StaticResource CurrentPaymentConverter}}"/>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>
