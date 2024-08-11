@@ -105,10 +105,10 @@
                                             <ColumnDefinition Width="1*"/>
                                             <ColumnDefinition Width="1*"/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5 5 5 10" Text="Pool" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="Snooker" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="0" Grid.Column="1" Margin="5" Text="~VIP" Style="{StaticResource Price}"/>
-                                        <TextBlock Grid.Row="0" Grid.Column="2" Margin="5" Text="VIP" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5 5 5 10" Text="Pool 8" FontSize="14" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="Snooker" FontSize="14" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="1" Margin="5" Text="Non-VIP" FontSize="14" Style="{StaticResource Price}"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="2" Margin="5" Text="VIP"    FontSize="14" Style="{StaticResource Price}"/>
                                         <TextBlock Grid.Row="1" Grid.Column="1" Text="￥36/h" Style="{StaticResource Price}"/>
                                         <TextBlock Grid.Row="1" Grid.Column="2" Text="￥30/h" Style="{StaticResource Price}"/>
                                         <TextBlock Grid.Row="2" Grid.Column="1" Text="￥54/h" Style="{StaticResource Price}"/>
